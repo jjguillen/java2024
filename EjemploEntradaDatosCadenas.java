@@ -14,5 +14,6 @@ public class EjemploEntradaDatosCadenas {
 
         System.out.println("Tu nombre es " + nombre);
 
+        sc.close(); //Cerrar la entrada de teclado
     }
 }
