@@ -79,6 +79,7 @@ public class Colores {
         }
 
         //SOLUCIÓN 3
+        //Me doy cuenta que el primer y segundo color son la misma combinación que segundo y primer color
         if ( color1.equals("R") && color2.equals("A") || 
             color1.equals("A") && color2.equals("R") ) {
             System.out.println("Magenta");
