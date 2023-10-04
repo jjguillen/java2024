@@ -1,7 +1,7 @@
 package tema2;
 import java.util.Scanner;
 
-public class ParImpar {
+public class ParImparMultiplo10 {
     public static void main(String[] args) {
         //1. Declaración de variables
         int num;
@@ -13,15 +13,20 @@ public class ParImpar {
         //3. Comprobar si es par o impar
         if (num % 2 == 0) {
             System.out.println("Es par");
+
+            //Solo preguntar si es múltiplo de 10 aquí
+            if (num % 10 == 0) {
+                System.out.println("Es múltiplo de 10");
+            } else {
+                System.out.println("No es múltiplo de 10");
+            }
         } else {
             System.out.println("Es impar");
-        }
-
-        if (num % 10 == 0) {
-            System.out.println("Es múltiplo de 10");
-        } else {
+            //No va a ser nunca múltiplo de 10
             System.out.println("No es múltiplo de 10");
         }
+
+        
 
 
     }
