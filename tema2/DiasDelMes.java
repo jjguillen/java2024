@@ -21,8 +21,20 @@ public class DiasDelMes {
                     System.out.println("Fecha incorrecta");
                 }
             //Falta case 30 días
+            case 4,6,9,11:
+                if (dia >= 1 && dia <= 30) {
+                    System.out.println("Fecha correcta");
+                } else {
+                    System.out.println("Fecha incorrecta");
+                }
             //Falta case 28 días
-            
+            case 2:
+                if (dia >= 1 && dia <= 28) {
+                    System.out.println("Fecha correcta");
+                } else {
+                    System.out.println("Fecha incorrecta");
+                }
+                //Faltaría comprobar si es una año bisiesto y entonces el rango va de 1 a 29
             default:
                 System.out.println("Mes incorrecto");
         }
