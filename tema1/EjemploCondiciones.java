@@ -1,3 +1,4 @@
+package tema1;
 public class EjemploCondiciones {
     public static void main(String[] args) {
         
