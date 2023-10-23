@@ -36,11 +36,8 @@ public class CubitusHumerus1 {
             System.out.println("Cubitus (j1): " + tirada1 + " Humerus (j2): " + tirada2);
 
             //Calcular ganador
-            //Si tirada1 > tirada2 gana Cubitus
-            //Si tirada2 > tirada1 gana Humerus
-
-            if (tirada1 > tirada2) {
-                
+            
+            if (tirada1 > tirada2) {   //Gana jugador1 Cubitus
                 System.out.println("Este turno lo gana Cubitus");
                 totalJugador1 = totalJugador1 + (tirada1 + tirada2);
                 if (totalEmpate > 0) {
@@ -48,7 +45,7 @@ public class CubitusHumerus1 {
                     totalEmpate = 0;
                 }
 
-            } else if (tirada2 > tirada1) {
+            } else if (tirada2 > tirada1) {  //Gana jugador2 Humerus
                 System.out.println("Este turno lo gana Humerus");
                 totalJugador2 = totalJugador2 + (tirada1 + tirada2);
 
@@ -57,7 +54,7 @@ public class CubitusHumerus1 {
                     totalEmpate = 0;
                 }
 
-            } else {
+            } else {  //Empate
                 totalEmpate = totalEmpate + (tirada1 + tirada2);
             }
 
