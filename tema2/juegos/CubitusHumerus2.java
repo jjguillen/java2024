@@ -31,7 +31,7 @@ public class CubitusHumerus2 {
 
         try {
             turnos = Integer.parseInt(sc.nextLine());
-
+            
             for(int i=1; i <= turnos; i++) {
                 System.out.println("Turno " + i +  "---------------------------");
                 tiradaJ1 = generarNumero(1, 6);
@@ -40,7 +40,7 @@ public class CubitusHumerus2 {
                 tiradaJ2_3 = generarNumero(1, 6);
                 tiradaJ2_4 = generarNumero(1, 6);
 
-                System.out.println("Tirada Jugador1 -> " + tiradaJ1);
+                //System.out.println("Tirada Jugador1 -> " + tiradaJ1);
                 System.out.println("Tirada Jugador2 -> " + tiradaJ2_1 + ", " + tiradaJ2_2 + ", " + tiradaJ2_3 + ", " + tiradaJ2_4);
 
                 if(tiradaJ1 == tiradaJ2_1 || tiradaJ1 == tiradaJ2_2 || tiradaJ1 == tiradaJ2_3 || tiradaJ1 == tiradaJ2_4) {
