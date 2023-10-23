@@ -44,9 +44,9 @@ public class CubitusHumerus2 {
                 System.out.println("Tirada Jugador2 -> " + tiradaJ2_1 + ", " + tiradaJ2_2 + ", " + tiradaJ2_3 + ", " + tiradaJ2_4);
 
                 if(tiradaJ1 == tiradaJ2_1 || tiradaJ1 == tiradaJ2_2 || tiradaJ1 == tiradaJ2_3 || tiradaJ1 == tiradaJ2_4) {
-                    totalJ1++;
-                } else {
                     totalJ2++;
+                } else {
+                    totalJ1++;
                 }
             }
 
@@ -57,7 +57,6 @@ public class CubitusHumerus2 {
         System.out.println("El J1 ha sacado " + totalJ1 + " puntos");
         System.out.println("El J2 ha sacado " + totalJ2 + " puntos");
 
-    
         
 
     }
