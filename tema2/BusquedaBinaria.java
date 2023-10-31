@@ -42,8 +42,8 @@ public class BusquedaBinaria {
             numeroActual = generarNumero(min, max);
             while (opcion != 1) {
                 contador++;
-                
-                //System.out.println("Generando números entre " + min + " y " + max);
+
+                System.out.println("Generando números entre " + min + " y " + max);
                 System.out.println("¿Es tu número el " + numeroActual + "?");
 
                 System.out.println("1. Es el número, acertáste!!!");
