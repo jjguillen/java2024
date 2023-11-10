@@ -1,4 +1,4 @@
-package tema3;
+package tema3.Arrays;
 
 import java.util.Arrays;
 

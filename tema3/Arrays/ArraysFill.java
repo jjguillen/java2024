@@ -1,7 +1,7 @@
-package tema3;
+package tema3.Arrays;
 import java.util.Arrays;
 
-public class ArraystoString {
+public class ArraysFill {
     
     public static void main(String[] args) {
         
@@ -9,7 +9,8 @@ public class ArraystoString {
 
         Arrays.fill(notas, 5);
 
-        System.out.println( Arrays.toString(notas) );
+        for(int i=0; i<notas.length; i++)
+            System.out.print(notas[i] + " ");
     
     }
 }
