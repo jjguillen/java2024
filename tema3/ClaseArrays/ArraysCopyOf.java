@@ -1,8 +1,8 @@
-package tema3.Arrays;
+package tema3.ClaseArrays;
 
 import java.util.Arrays;
 
-public class ArraysEquals {
+public class ArraysCopyOf {
     
     public static void main(String[] args) {
         
@@ -16,16 +16,7 @@ public class ArraysEquals {
 
 
         //Copiar el array numeros a numerosCopia
-        //int numerosCopia[] = Arrays.copyOf(numeros, numeros.length);
-
-        //No puedo hacer numeros == numerosCopia
-        int[] numerosCopia = numeros;
-
-        //Son iguales?
-        boolean iguales = Arrays.equals(numeros, numerosCopia);
-        System.out.println(iguales);
-
-        
+        int numerosCopia[] = Arrays.copyOf(numeros, numeros.length);
 
         //Ordenar
         Arrays.sort(numeros);

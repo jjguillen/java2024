@@ -1,4 +1,4 @@
-package tema3.Arrays;
+package tema3.ClaseArrays;
 import java.util.Arrays;
 
 public class ArraystoString {

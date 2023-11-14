@@ -1,8 +1,8 @@
-package tema3.Arrays;
+package tema3.ClaseArrays;
 
 import java.util.Arrays;
 
-public class ArraysCopyOf {
+public class Arrayssort {
     
     public static void main(String[] args) {
         
@@ -14,15 +14,10 @@ public class ArraysCopyOf {
 
         System.out.println( Arrays.toString(numeros) );
 
-
-        //Copiar el array numeros a numerosCopia
-        int numerosCopia[] = Arrays.copyOf(numeros, numeros.length);
-
         //Ordenar
         Arrays.sort(numeros);
 
         System.out.println( Arrays.toString(numeros) );
-        System.out.println( Arrays.toString(numerosCopia) );
 
 
     }
