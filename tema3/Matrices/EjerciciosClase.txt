@@ -2,7 +2,7 @@
 
 2. Función que devuelva el valor mínimo de una matriz
 
-3. Función que le pasas como parámetro una un índice y un char ('f' o 'c') y debe devolver un
+3. Función que le pasas como parámetro un índice y un char ('f' o 'c') y debe devolver un
 array con la fila o la columna i de esa matriz si existe. Primero comprobar que el índice sea
 correcto.
 
