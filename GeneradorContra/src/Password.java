@@ -3,15 +3,15 @@ import java.util.Scanner;
 public class Password {
 
     //Properties --
-    int longitud;
-    String passwd;
+    private int longitud;
+
+    private String passwd;
+
 
     //Constructors --
-    public Password() {
+    public Password(int longitud) {
         //Pedir por pantalla la longitud deseada > 8
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Dime longitud de la password");
-        this.longitud = Integer.parseInt(sc.nextLine());
+        this.longitud = longitud;
 
         //Llamar a un método generate_password() que genere caracteres aleatorios
         generate_password();
@@ -24,14 +24,27 @@ public class Password {
 
 
     //Methods ----------------------------------------------------------------
+    public int getLongitud() {
+        return longitud;
+    }
 
-    private int generarNumero(int min, int max) {
+    public String getPasswd() {
+        return passwd;
+    }
+
+
+    public void setPasswd(String passwd) {
+        this.passwd = passwd;
+        this.longitud = passwd.length();
+    }
+
+    protected int generarNumero(int min, int max) {
         return  (int) ((Math.random() * (max - min + 1) + min)) ;
     }
-    private void generate_password() {
+    protected void generate_password() {
         StringBuffer sb = new StringBuffer();
         for(int i = 0; i < this.longitud; i++) {
-            int letra = generarNumero(32, 126);
+            int letra = generarNumero(65, 122);
             sb.append((char) letra);
         }
 
