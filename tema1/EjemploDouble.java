@@ -1,3 +1,5 @@
+package tema1;
+
 public class EjemploDouble {
     public static void main(String[] args) {
         
