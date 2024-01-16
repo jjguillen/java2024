@@ -10,6 +10,12 @@ public class Persona {
     private String ciudad;
     private String email;
 
+    public static int numPersonas;
+
+    public final String orientacionPolitica = "Liberal"; //Propiedad final
+    public static final int numMaximoPersonas = 100;     //Propiedad estática y final
+
+
     //CONSTRUCTORS
     Persona() {
         this.nombre = "Sin nombre";
@@ -18,6 +24,7 @@ public class Persona {
         this.ciudad = "No tiene";
         this.email = "nada";
         this.edad = 0;
+        Persona.numPersonas++;
     }
 
     Persona(String nombre, String apellidos, int edad, double altura, String ciudad, String email) {
@@ -27,6 +34,7 @@ public class Persona {
         this.ciudad = ciudad;
         this.email = email;
         this.edad = edad;
+        Persona.numPersonas++;
     }
 
     //GETTERS AND SETTERS

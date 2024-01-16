@@ -1,4 +1,4 @@
-package ejerciciosintroPOO;
+package tema4.src.ejerciciosintroPOO;
 
 public class Ejemplo1 {
 

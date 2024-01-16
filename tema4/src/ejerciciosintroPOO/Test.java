@@ -1,5 +1,7 @@
 package ejerciciosintroPOO;
 
+import ejerciciosintroPOO.Jugador;
+
 public class Test {
 
     public static void main(String[] args) {
