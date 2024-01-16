@@ -12,11 +12,6 @@ public class TestPersona {
         System.out.println(per2);
 
 
-
-
-
-
-
     }
 
 }
