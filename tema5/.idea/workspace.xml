@@ -4,9 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="07f582a3-252a-4cf1-8dbf-d462f5c65932" name="Changes" comment="Ejemplo paquetes y acceso a propiedades y métodos">
-      <change afterPath="$PROJECT_DIR$/src/ejemploClone/Casilla.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ejemploClone/TestCasilla.java" afterDir="false" />
+    <list default="true" id="07f582a3-252a-4cf1-8dbf-d462f5c65932" name="Changes" comment="Clonación y equals">
+      <change afterPath="$PROJECT_DIR$/src/naveEspacial/Arma.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/naveEspacial/NaveEspacial.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/naveEspacial/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/panaderia/BarraDePan.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/panaderia/TestBarra.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -38,6 +41,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.Test.executor": "Run",
+    "Application.TestBarra.executor": "Run",
     "Application.TestCasilla.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -72,11 +76,20 @@
       <option name="project" value="LOCAL" />
       <updated>1705435312507</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Clonación y equals">
+      <option name="closed" value="true" />
+      <created>1705514216656</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1705514216656</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Ejemplo paquetes y acceso a propiedades y métodos" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ejemplo paquetes y acceso a propiedades y métodos" />
+    <MESSAGE value="Clonación y equals" />
+    <option name="LAST_COMMIT_MESSAGE" value="Clonación y equals" />
   </component>
 </project>
