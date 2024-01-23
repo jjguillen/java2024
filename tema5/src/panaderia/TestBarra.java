@@ -6,6 +6,7 @@ public class TestBarra {
         BarraDePan b1 = new BarraDePan(7, 4, 25);
         BarraDePan b2 = new BarraDePan(8, 4, 25);
 
+
         b1.setLargo(8);
         System.out.println(b1.getLargo());
 
@@ -38,7 +39,14 @@ public class TestBarra {
         System.out.println(b1.getCantLevadura());
         System.out.println(b2.getCantLevadura());
 
+        BarraDePan b8 = new BarraDePan();
+        System.out.println(b8);
 
+        b8 = null;
+        System.gc();
+
+        BarraDePan b9 = new BarraDePan(20, 5);
+        System.out.println(b9);
 
 
     }

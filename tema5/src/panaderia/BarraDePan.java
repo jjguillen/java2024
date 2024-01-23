@@ -7,15 +7,32 @@ public class BarraDePan {
     private int largo;
     private int ancho;
     private int cantLevadura;
+
     private static int numeroBarras;
 
 
+    //Constructor por defecto
+    public BarraDePan() {
+        this.largo = 5;
+        this.ancho = 2;
+        this.cantLevadura = 15;
+    }
+
+    //Constructor definido, le paso el valor de las propiedades
     public BarraDePan(int largo, int ancho, int cantLevadura) {
         this.largo = largo;
         this.ancho = ancho;
         this.cantLevadura = cantLevadura;
     }
 
+    //Constructor definido
+    public BarraDePan(int largo, int ancho){
+        this.largo = largo;
+        this.ancho = ancho;
+        this.cantLevadura = 15;
+    }
+
+    //Constructor copia: le paso como parámetro otro objeto
     public BarraDePan(BarraDePan otra) {
          this.largo = otra.largo;
          this.ancho = otra.ancho;
@@ -81,5 +98,11 @@ public class BarraDePan {
     public void meterLevadura(BarraDePan otra) {
         otra.cantLevadura = 100;
         this.cantLevadura += otra.cantLevadura;
+    }
+
+    @Override
+    protected void finalize() throws Throwable {
+        super.finalize();
+        System.out.println("Finalizando objeto");
     }
 }

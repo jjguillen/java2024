@@ -4,13 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="07f582a3-252a-4cf1-8dbf-d462f5c65932" name="Changes" comment="Clonación y equals">
-      <change afterPath="$PROJECT_DIR$/src/naveEspacial/Arma.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/naveEspacial/NaveEspacial.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/naveEspacial/Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/panaderia/BarraDePan.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/panaderia/TestBarra.java" afterDir="false" />
+    <list default="true" id="07f582a3-252a-4cf1-8dbf-d462f5c65932" name="Changes" comment="BarradePan: paso de parametros, equals, ...">
+      <change afterPath="$PROJECT_DIR$/src/arrayList/Casilla.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/arrayList/Tablero.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/arrayList/TestArrayList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/arrayList/TestTablero.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/panaderia/BarraDePan.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/panaderia/BarraDePan.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/panaderia/TestBarra.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/panaderia/TestBarra.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,8 +42,10 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.Test.executor": "Run",
+    "Application.TestArrayList.executor": "Run",
     "Application.TestBarra.executor": "Run",
     "Application.TestCasilla.executor": "Run",
+    "Application.TestTablero.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
@@ -84,12 +87,21 @@
       <option name="project" value="LOCAL" />
       <updated>1705514216656</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="BarradePan: paso de parametros, equals, ...">
+      <option name="closed" value="true" />
+      <created>1705953743140</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1705953743140</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Ejemplo paquetes y acceso a propiedades y métodos" />
     <MESSAGE value="Clonación y equals" />
-    <option name="LAST_COMMIT_MESSAGE" value="Clonación y equals" />
+    <MESSAGE value="BarradePan: paso de parametros, equals, ..." />
+    <option name="LAST_COMMIT_MESSAGE" value="BarradePan: paso de parametros, equals, ..." />
   </component>
 </project>
