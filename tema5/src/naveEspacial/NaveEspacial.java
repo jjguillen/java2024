@@ -2,7 +2,8 @@ package naveEspacial;
 
 import java.util.Objects;
 
-public class NaveEspacial {
+public class NaveEspacial implements Equipable {
+
 
     public enum TipoNave { CRUCERO, CAZA, DESTRUCTOR }
 
@@ -116,4 +117,6 @@ public class NaveEspacial {
 
         return result;
     }
+
+
 }

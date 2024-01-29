@@ -13,6 +13,7 @@ public class Lingo {
     private ArrayList<String> palabras = new ArrayList<String>();
     private String palabraAcertar;
     private StringBuffer palabraIntento;
+    private String[] letrasUsadas;
 
     private static int partidasGanadas=0;
 
@@ -35,6 +36,8 @@ public class Lingo {
         for(int i=0; i < this.palabraAcertar.length(); i++) {
             this.palabraIntento.append("-");
         }
+
+        this.letrasUsadas = new String[30];
     }
 
     public String getPalabraAcertar() {
@@ -51,6 +54,10 @@ public class Lingo {
 
     public static void setPartidasGanadas(int partidasGanadas) {
         Lingo.partidasGanadas = partidasGanadas;
+    }
+
+    public String[] getLetrasUsadas() {
+        return letrasUsadas;
     }
 
     /**
@@ -77,5 +84,37 @@ public class Lingo {
         //Volver a poner this.palabraIntento con -----
 
         return aciertos;
+    }
+
+    public boolean probarLetra(String letra) {
+        boolean yaUsada = this.letraYaProbada(letra);
+
+        if (yaUsada) {
+            return true;
+        }
+
+        int posicion=0;
+        for (int i=0; i<this.letrasUsadas.length; i++) {
+            if (this.letrasUsadas[i] == null)
+                posicion = i;
+        }
+
+        //Meter la letra en la posición
+        this.letrasUsadas[posicion] = letra;
+
+        return false;
+    }
+
+    private boolean letraYaProbada(String letra) {
+        boolean encontrado = false;
+        for( int i=0; i<this.letrasUsadas.length; i++) {
+            if (this.letrasUsadas[i] != null) {
+                if (this.letrasUsadas[i].equals(letra)) {
+                    encontrado = true;
+                }
+            }
+        }
+
+        return encontrado;
     }
 }

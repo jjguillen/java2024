@@ -4,6 +4,11 @@ import java.util.Scanner;
 
 public class TestLingo {
 
+    public static void pintarArray(String[] letras) {
+        for(int i=0; i<letras.length; i++) {
+            System.out.println(letras[i]);
+        }
+    }
     public static void main(String[] args) {
 
         Lingo juego = new Lingo();
@@ -11,6 +16,7 @@ public class TestLingo {
 
         Scanner sc = new Scanner(System.in);
         String palabraUsuario = "";
+
         while(true) {
             System.out.println("Introduce tu palabra");
             palabraUsuario = sc.nextLine();
@@ -25,5 +31,16 @@ public class TestLingo {
                 System.out.println("Sigue intentándolo");
             }
         }
+
+        /*
+        juego.probarLetra("a");
+        juego.probarLetra("b");
+        if (juego.probarLetra("b")) {
+            System.out.println("Ya usada");
+        }
+        pintarArray(juego.getLetrasUsadas());
+        */
+
+
     }
 }

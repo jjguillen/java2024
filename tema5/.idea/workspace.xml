@@ -4,14 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="07f582a3-252a-4cf1-8dbf-d462f5c65932" name="Changes" comment="ArrayList">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Lingo/Lingo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Lingo/TestLingo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/arrayList/Producto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/arrayList/TestTienda.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/arrayList/Tienda.java" afterDir="false" />
+    <list default="true" id="07f582a3-252a-4cf1-8dbf-d462f5c65932" name="Changes" comment="Lingo">
+      <change afterPath="$PROJECT_DIR$/src/herencia/Cliente.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/herencia/Empleado.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/herencia/Persona.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/herencia/TestHerencia.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/naveEspacial/Equipable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/naveEspacial/Jugador.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Lingo/Lingo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Lingo/Lingo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Lingo/TestLingo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Lingo/TestLingo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/naveEspacial/NaveEspacial.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/naveEspacial/NaveEspacial.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,6 +24,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -46,6 +50,7 @@
     "Application.TestArrayList2.executor": "Run",
     "Application.TestBarra.executor": "Run",
     "Application.TestCasilla.executor": "Run",
+    "Application.TestHerencia.executor": "Run",
     "Application.TestLingo.executor": "Run",
     "Application.TestTablero.executor": "Run",
     "Application.TestTienda.executor": "Run",
@@ -114,7 +119,15 @@
       <option name="project" value="LOCAL" />
       <updated>1706039833219</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Lingo">
+      <option name="closed" value="true" />
+      <created>1706119068856</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1706119068856</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -122,6 +135,7 @@
     <MESSAGE value="Clonación y equals" />
     <MESSAGE value="BarradePan: paso de parametros, equals, ..." />
     <MESSAGE value="ArrayList" />
-    <option name="LAST_COMMIT_MESSAGE" value="ArrayList" />
+    <MESSAGE value="Lingo" />
+    <option name="LAST_COMMIT_MESSAGE" value="Lingo" />
   </component>
 </project>
