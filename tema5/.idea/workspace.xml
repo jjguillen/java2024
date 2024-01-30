@@ -4,17 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="07f582a3-252a-4cf1-8dbf-d462f5c65932" name="Changes" comment="Lingo">
-      <change afterPath="$PROJECT_DIR$/src/herencia/Cliente.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/herencia/Empleado.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/herencia/Persona.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/herencia/TestHerencia.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/naveEspacial/Equipable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/naveEspacial/Jugador.java" afterDir="false" />
+    <list default="true" id="07f582a3-252a-4cf1-8dbf-d462f5c65932" name="Changes" comment="Herencia inicio">
+      <change afterPath="$PROJECT_DIR$/src/ejercicio2Practica_I/Arma.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ejercicio2Practica_I/Jugador.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ejercicio2Practica_I/Monstruo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/electrodomesticos/Electrodomestico.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/electrodomesticos/Lavadora.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/electrodomesticos/Television.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/electrodomesticos/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/expedientes/Expediente.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/expedientes/NotasCurso.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/expedientes/Test.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Lingo/Lingo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Lingo/Lingo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Lingo/TestLingo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Lingo/TestLingo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/naveEspacial/NaveEspacial.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/naveEspacial/NaveEspacial.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,9 +61,15 @@
     "kotlin-language-version-configured": "true",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2"
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "editor.preferences.fonts.default"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="ejercicio2Practica_I" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -127,7 +134,15 @@
       <option name="project" value="LOCAL" />
       <updated>1706119068856</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Herencia inicio">
+      <option name="closed" value="true" />
+      <created>1706557399516</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1706557399516</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -136,6 +151,7 @@
     <MESSAGE value="BarradePan: paso de parametros, equals, ..." />
     <MESSAGE value="ArrayList" />
     <MESSAGE value="Lingo" />
-    <option name="LAST_COMMIT_MESSAGE" value="Lingo" />
+    <MESSAGE value="Herencia inicio" />
+    <option name="LAST_COMMIT_MESSAGE" value="Herencia inicio" />
   </component>
 </project>
