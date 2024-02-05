@@ -2,25 +2,17 @@ package naveEspacial;
 
 import java.util.Objects;
 
-public class Jugador implements Equipable, Comparable<Jugador> {
+public class Jugador extends Personaje implements Equipable, Comparable<Jugador> {
 
-    private String nombre;
+    public enum Clase {PILOTO, ASTRONAUTA, SOLDADO}
     private Arma armaDerecha;
+    private Clase clase;
 
-    public Jugador() {
-    }
 
-    public Jugador(String nombre, Arma armaDerecha) {
-        this.nombre = nombre;
+    public Jugador(String nombre, Arma armaDerecha, int salud, Clase clase) {
+        super(nombre, salud);
         this.armaDerecha = armaDerecha;
-    }
-
-    public String getNombre() {
-        return nombre;
-    }
-
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
+        this.clase = clase;
     }
 
     public Arma getArmaDerecha() {
@@ -36,23 +28,10 @@ public class Jugador implements Equipable, Comparable<Jugador> {
         final StringBuffer sb = new StringBuffer("Jugador{");
         sb.append("nombre='").append(nombre).append('\'');
         sb.append(", armaDerecha=").append(armaDerecha);
+        sb.append(", salud=").append(salud);
         sb.append('}');
         return sb.toString();
     }
-
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        Jugador jugador = (Jugador) o;
-        return Objects.equals(nombre, jugador.nombre);
-    }
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(nombre);
-    }
-
 
     @Override
     public boolean equipar(Arma arma) {

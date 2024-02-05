@@ -4,14 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="07f582a3-252a-4cf1-8dbf-d462f5c65932" name="Changes" comment="Ejercicio herencia y polimorfismo: tienda">
-      <change afterPath="$PROJECT_DIR$/src/agenda/Agenda.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/agenda/Contacto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/agenda/ContactoEmpresa.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/agenda/ContactoPersona.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/agenda/TestAgenda.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tienda/PruebaMayuscula.java" afterDir="false" />
+    <list default="true" id="07f582a3-252a-4cf1-8dbf-d462f5c65932" name="Changes" comment="Ejemplo Agenda">
+      <change afterPath="$PROJECT_DIR$/src/fechas/Hamburguesa.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/fechas/Parking.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/fechas/TestHamburguesa.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/fechas/TestParking.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/naveEspacial/Monstruo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/naveEspacial/MonstruoFinalNivel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/naveEspacial/Personaje.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/agenda/Contacto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/agenda/Contacto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/naveEspacial/Jugador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/naveEspacial/Jugador.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,8 +52,10 @@
     "Application.TestArrayList2.executor": "Run",
     "Application.TestBarra.executor": "Run",
     "Application.TestCasilla.executor": "Run",
+    "Application.TestHamburguesa.executor": "Run",
     "Application.TestHerencia.executor": "Run",
     "Application.TestLingo.executor": "Run",
+    "Application.TestParking.executor": "Run",
     "Application.TestTablero.executor": "Run",
     "Application.TestTienda.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
@@ -156,7 +161,15 @@
       <option name="project" value="LOCAL" />
       <updated>1706724273426</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Ejemplo Agenda">
+      <option name="closed" value="true" />
+      <created>1707155880989</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1707155880989</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -168,6 +181,7 @@
     <MESSAGE value="Herencia inicio" />
     <MESSAGE value="Herencia, ArrayList, Polimorfismo" />
     <MESSAGE value="Ejercicio herencia y polimorfismo: tienda" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ejercicio herencia y polimorfismo: tienda" />
+    <MESSAGE value="Ejemplo Agenda" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ejemplo Agenda" />
   </component>
 </project>
