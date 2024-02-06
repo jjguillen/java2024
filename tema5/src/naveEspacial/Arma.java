@@ -5,8 +5,8 @@ import java.util.Objects;
 public class Arma {
 
     private String nombre;
-    private int puntosD;
-    private boolean esTriple;
+    private Integer puntosD;
+    private Boolean esTriple;
 
     public Arma(String nombre, int puntosD, boolean esTriple) {
         this.nombre = nombre;

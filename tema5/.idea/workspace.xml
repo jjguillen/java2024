@@ -4,17 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="07f582a3-252a-4cf1-8dbf-d462f5c65932" name="Changes" comment="Ejemplo Agenda">
-      <change afterPath="$PROJECT_DIR$/src/fechas/Hamburguesa.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/fechas/Parking.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/fechas/TestHamburguesa.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/fechas/TestParking.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/naveEspacial/Monstruo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/naveEspacial/MonstruoFinalNivel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/naveEspacial/Personaje.java" afterDir="false" />
+    <list default="true" id="07f582a3-252a-4cf1-8dbf-d462f5c65932" name="Changes" comment="Herencia y abstracción">
+      <change afterPath="$PROJECT_DIR$/src/naveEspacial/Partida.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/naveEspacial/TestPartida.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/naveEspacial/TestWrapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/usodefechas/EjemploLocalDate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/usodefechas/EjemploLocalDateTime.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/usodefechas/EjemploLocalTime.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/usodefechas/FormatoFechasHoras.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/usodefechas/IntervalosPeriodDuration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/usodefechas/TiempoCodigo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/agenda/Contacto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/agenda/Contacto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/naveEspacial/Jugador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/naveEspacial/Jugador.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/naveEspacial/Arma.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/naveEspacial/Arma.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,6 +46,11 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.EjemploFechas.executor": "Run",
+    "Application.EjemploLocalDateTime.executor": "Run",
+    "Application.EjemploLocalTime.executor": "Run",
+    "Application.FormatoFechasHoras.executor": "Run",
+    "Application.IntervalosPeriodDuration.executor": "Run",
     "Application.PruebaMayuscula.executor": "Run",
     "Application.Test.executor": "Run",
     "Application.TestAgenda.executor": "Run",
@@ -56,8 +62,11 @@
     "Application.TestHerencia.executor": "Run",
     "Application.TestLingo.executor": "Run",
     "Application.TestParking.executor": "Run",
+    "Application.TestPartida.executor": "Run",
     "Application.TestTablero.executor": "Run",
     "Application.TestTienda.executor": "Run",
+    "Application.TestWrapper.executor": "Run",
+    "Application.TiempoCodigo.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
@@ -169,7 +178,15 @@
       <option name="project" value="LOCAL" />
       <updated>1707155880989</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Herencia y abstracción">
+      <option name="closed" value="true" />
+      <created>1707161144558</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1707161144558</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -182,6 +199,7 @@
     <MESSAGE value="Herencia, ArrayList, Polimorfismo" />
     <MESSAGE value="Ejercicio herencia y polimorfismo: tienda" />
     <MESSAGE value="Ejemplo Agenda" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ejemplo Agenda" />
+    <MESSAGE value="Herencia y abstracción" />
+    <option name="LAST_COMMIT_MESSAGE" value="Herencia y abstracción" />
   </component>
 </project>
