@@ -1,6 +1,8 @@
-package logistica.entidades;
+package polimorfismo;
 
-public class ProductoRefrigerado extends Producto  {
+import logistica.entidades.NivelRefrigeracion;
+
+public class ProductoRefrigerado extends Producto {
 
     private NivelRefrigeracion nivelRefrigeracion;
 

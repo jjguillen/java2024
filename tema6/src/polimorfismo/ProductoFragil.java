@@ -1,4 +1,6 @@
-package logistica.entidades;
+package polimorfismo;
+
+import logistica.entidades.NivelFragil;
 
 public class ProductoFragil extends Producto {
 
