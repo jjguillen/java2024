@@ -1,4 +1,4 @@
-package biblioteca;
+package biblioteca_vJavi;
 
 public interface Prestable {
     public void prestaAUsuario(Usuario user);
