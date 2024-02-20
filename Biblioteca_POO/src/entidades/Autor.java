@@ -1,16 +1,16 @@
-package biblioteca_vJavi;
+package entidades;
 
 import java.util.Objects;
 
 public class Autor {
     private String nombre;
     private String apellidos;
-    private int edad;
+    private Integer edad;
     private String ciudad;
     private String direccion;
     private String email;
 
-    public Autor(String nombre, String apellidos, int edad, String ciudad, String direccion, String email) {
+    public Autor(String nombre, String apellidos, Integer edad, String ciudad, String direccion, String email) {
         this.nombre = nombre;
         this.apellidos = apellidos;
         this.edad = edad;
@@ -35,11 +35,11 @@ public class Autor {
         this.apellidos = apellidos;
     }
 
-    public int getEdad() {
+    public Integer getEdad() {
         return edad;
     }
 
-    public void setEdad(int edad) {
+    public void setEdad(Integer edad) {
         this.edad = edad;
     }
 
