@@ -2,6 +2,9 @@ package entidades;
 
 import java.util.Objects;
 
+/**
+ * @author ProfeJavier
+ */
 public class Autor {
     private String nombre;
     private String apellidos;

@@ -4,6 +4,11 @@ import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.Objects;
 
+/**
+ * @author ProfeJavier
+ * @version 1.0
+ * La clase que describe los Documentos de nuestra aplicación: libros y revistas
+ */
 public abstract class Documento implements Prestable {
 
     protected Long id;
@@ -30,6 +35,10 @@ public abstract class Documento implements Prestable {
         this.numPaginas = numPaginas;
     }
 
+    /**
+     * Constructor copia
+     * @param documento
+     */
     public Documento(Documento documento) {
         this.id = documento.id;
         this.isbn = documento.isbn;
@@ -115,6 +124,11 @@ public abstract class Documento implements Prestable {
         return id != null ? id.hashCode() : 0;
     }
 
+    /**
+     * El documento lo presta al usuario marcado como parámetro
+     * Añade el documento a la lista de prestados del usuario
+     * @param user
+     */
     @Override
     public void prestaAUsuario(Usuario user) {
         this.prestadoA = user;
@@ -122,6 +136,11 @@ public abstract class Documento implements Prestable {
         user.addDocumento(this);
     }
 
+    /**
+     * El documento deja de estar prestado.
+     * Elimina el documento de la lista de prestados del usuario parámetro
+     * @param user
+     */
     @Override
     public void devuelve(Usuario user) {
         this.prestadoA = null;
@@ -129,6 +148,10 @@ public abstract class Documento implements Prestable {
         user.delDocumento(this);
     }
 
+    /**
+     * Nos dice si el documento está o no prestado
+     * @return boolean true si el documento está prestado a alguien. false en otro caso
+     */
     @Override
     public boolean estaPrestado() {
         if (this.prestadoA == null)
@@ -141,10 +164,18 @@ public abstract class Documento implements Prestable {
         return autores;
     }
 
+    /**
+     * Añade un autor a la lista de autores del documento
+     * @param autor Autor
+     */
     public void addAutor(Autor autor) {
         this.autores.add(autor);
     }
 
+    /**
+     * Elimina un autor de la lista de autores del documento
+     * @param autor Autor
+     */
     public void delAutor(Autor autor) {
         this.autores.remove(autor);
     }
