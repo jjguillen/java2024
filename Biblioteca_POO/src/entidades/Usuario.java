@@ -1,6 +1,10 @@
 package entidades;
 
+import org.apache.commons.codec.digest.DigestUtils;
+
 import java.util.ArrayList;
+
+import static org.apache.commons.codec.digest.MessageDigestAlgorithms.SHA_224;
 
 public class Usuario {
 
@@ -9,14 +13,16 @@ public class Usuario {
     private Long id;
     private String dni;
     private String nombre;
+    private String password;
     private Integer limitePrestamos;
     private Integer limitePlazoPrestamos; //En días
     private ArrayList<Documento> documentosEnPrestamo = new ArrayList<>();
 
-    public Usuario(String dni, String nombre, Integer limitePrestamos, Integer limitePlazoPrestamos) {
+    public Usuario(String dni, String nombre, String password, Integer limitePrestamos, Integer limitePlazoPrestamos) {
         this.id = Usuario.contadorId++;
         this.dni = dni;
         this.nombre = nombre;
+        this.password = DigestUtils.sha512_256Hex(password);
         this.limitePrestamos = limitePrestamos;
         this.limitePlazoPrestamos = limitePlazoPrestamos;
     }
@@ -61,6 +67,14 @@ public class Usuario {
         this.limitePlazoPrestamos = limitePlazoPrestamos;
     }
 
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
     /**
      * Añade un documento a la colección de documentos prestados
      * @param documento
@@ -96,6 +110,7 @@ public class Usuario {
         final StringBuffer sb = new StringBuffer("Usuario{");
         sb.append("dni='").append(dni).append('\'');
         sb.append(", nombre='").append(nombre).append('\'');
+        sb.append(", password='").append(password).append('\'');
         sb.append('}');
         return sb.toString();
     }

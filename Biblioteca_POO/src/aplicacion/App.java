@@ -39,8 +39,8 @@ public class App {
         }
 
         //USUARIOS
-        Usuario u1 = new Usuario("47478541A", "Manolo", 5, 30);
-        Usuario u2 = new Usuario("45568541L", "Laura", 2, 15);
+        Usuario u1 = new Usuario("47478541A", "Manolo", "1234",5, 30);
+        Usuario u2 = new Usuario("45568541L", "Laura", "1234",2, 15);
         miBiblioteca.addUsuario(u1);
         miBiblioteca.addUsuario(u2);
 
