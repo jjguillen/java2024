@@ -1,10 +1,11 @@
 package entidades;
 
-import org.apache.commons.codec.digest.DigestUtils;
+
 
 import java.util.ArrayList;
 
-import static org.apache.commons.codec.digest.MessageDigestAlgorithms.SHA_224;
+//import org.apache.commons.codec.digest.DigestUtils;
+//import static org.apache.commons.codec.digest.MessageDigestAlgorithms.SHA_224;
 
 public class Usuario {
 
@@ -16,13 +17,14 @@ public class Usuario {
     private String password;
     private Integer limitePrestamos;
     private Integer limitePlazoPrestamos; //En días
-    private ArrayList<Documento> documentosEnPrestamo = new ArrayList<>();
+    private ArrayList<entidades.Documento> documentosEnPrestamo = new ArrayList<>();
 
     public Usuario(String dni, String nombre, String password, Integer limitePrestamos, Integer limitePlazoPrestamos) {
         this.id = Usuario.contadorId++;
         this.dni = dni;
         this.nombre = nombre;
-        this.password = DigestUtils.sha512_256Hex(password);
+        this.password = password;
+        //this.password = DigestUtils.sha512_256Hex(password);
         this.limitePrestamos = limitePrestamos;
         this.limitePlazoPrestamos = limitePlazoPrestamos;
     }
@@ -31,7 +33,7 @@ public class Usuario {
         return id;
     }
 
-    public ArrayList<Documento> getDocumentosEnPrestamo() {
+    public ArrayList<entidades.Documento> getDocumentosEnPrestamo() {
         return documentosEnPrestamo;
     }
 
@@ -79,7 +81,7 @@ public class Usuario {
      * Añade un documento a la colección de documentos prestados
      * @param documento
      */
-    public void addDocumento(Documento documento) {
+    public void addDocumento(entidades.Documento documento) {
         this.documentosEnPrestamo.add(documento);
     }
 
@@ -87,7 +89,7 @@ public class Usuario {
      * Eliminar un documento de la colección de documentos prestados
      * @param documento
      */
-    public void delDocumento(Documento documento) {
+    public void delDocumento(entidades.Documento documento) {
         this.documentosEnPrestamo.remove(documento);
     }
 

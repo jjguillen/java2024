@@ -34,7 +34,7 @@ public class Ejercicio9Propuestos {
         //4. Pintar el resultado
         System.out.println("El resultado es " + distancia);
 
-        sca.close();
+        escaner.close();
     
 
     }

@@ -1,3 +1,5 @@
+package holamundo.src;
+
 public class Main {
 
     public static int generarNumero(int min, int max)  {

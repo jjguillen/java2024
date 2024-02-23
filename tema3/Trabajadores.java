@@ -17,7 +17,7 @@ public class Trabajadores {
             salarios[i] = Double.parseDouble(sc.nextLine());
         }
 
-        for(int i=0; i < salarios.length; i++) {1
+        for(int i=0; i < salarios.length; i++) {
             System.out.print(salarios[i] + ", ");
             total = total + salarios[i];
         }
