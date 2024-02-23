@@ -1,12 +1,20 @@
 package casillas;
 
-public abstract class CasillaEspecial extends Casilla {
-
+public class Carta {
+    private String texto;
     private int cantidad;
 
-    public CasillaEspecial(int numero, String nombre, int cantidad) {
-        super(numero, nombre);
+    public Carta(String texto, int cantidad) {
+        this.texto = texto;
         this.cantidad = cantidad;
+    }
+
+    public String getTexto() {
+        return texto;
+    }
+
+    public void setTexto(String texto) {
+        this.texto = texto;
     }
 
     public int getCantidad() {
@@ -19,12 +27,10 @@ public abstract class CasillaEspecial extends Casilla {
 
     @Override
     public String toString() {
-        final StringBuffer sb = new StringBuffer("CasillaEspecial{");
-        sb.append(" numero=").append(numero);
-        sb.append(", nombre='").append(nombre).append('\'');
+        final StringBuffer sb = new StringBuffer("Carta{");
+        sb.append("texto='").append(texto).append('\'');
         sb.append(", cantidad=").append(cantidad);
         sb.append('}');
         return sb.toString();
     }
-
 }

@@ -1,6 +1,9 @@
 package casillas;
 
-public class Casilla {
+import juego.Jugador;
+import juego.Tablero;
+
+public abstract class Casilla {
 
     protected int numero;
     protected String nombre;
@@ -50,4 +53,6 @@ public class Casilla {
         sb.append('}');
         return sb.toString();
     }
+
+    public abstract String accion(Jugador jugador);
 }
