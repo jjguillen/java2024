@@ -1,7 +1,8 @@
-package juego;
+package Monopoly.src.juego;
 
-import casillas.Casilla;
-import casillas.Propiedad;
+import Monopoly.src.casillas.Carta;
+import Monopoly.src.casillas.Casilla;
+import Monopoly.src.casillas.Propiedad;
 
 import java.util.ArrayList;
 
@@ -9,8 +10,6 @@ public class Juego {
 
     private ArrayList<Jugador> jugadores;
     private Tablero tablero; //Casillas del 1 al 39
-    //private ArrayList<Carta>;  //Más adelante
-
 
     public Juego() {
         this.tablero = new Tablero();
@@ -39,6 +38,7 @@ public class Juego {
                 System.out.println("    - " + propiedad.getNombre());
             }
             System.out.println("---------------------------------------------------------------");
+            System.out.println();
         }
     }
 
@@ -58,19 +58,15 @@ public class Juego {
      * @param numeroCasillas
      */
     public int moverJugador(Jugador jugador, int numeroCasillas) {
-        //Si un jugador se queda sin dinero lo retiramos del juego antes de mover
-        if (jugador.getDinero() <= 0) {
-            //this.jugadores.remove(jugador);
-            return -1;
-        }
-
         int numCasillaActual = jugador.getCasillaActual().getNumero();
         if (numCasillaActual + numeroCasillas > 39) {
-            numCasillaActual = numCasillaActual + numeroCasillas - 40;
-            jugador.cobrar(40000);
+            numCasillaActual = numCasillaActual + numeroCasillas - 39;
+            jugador.cobrar(20000);
         } else {
             numCasillaActual += numeroCasillas;
         }
+
+        System.out.println("Moviendo a la casilla: " + numCasillaActual);
 
         Casilla casilla = this.tablero.buscarCasilla(numCasillaActual);
         jugador.setCasillaActual(casilla);

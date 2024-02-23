@@ -1,4 +1,4 @@
-package casillas;
+package Monopoly.src.casillas;
 
 public class Carta {
     private String texto;

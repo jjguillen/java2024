@@ -1,9 +1,6 @@
-package main;
+package Monopoly.src.main;
 
-import juego.Juego;
-import juego.Jugador;
-import juego.Tablero;
-
+import Monopoly.src.juego.*;
 import java.util.Scanner;
 
 public class Main {
@@ -26,6 +23,7 @@ public class Main {
             //Comprobar ganador
             if (juego.getJugadores().size() == 1) {
                 System.out.println("Enhorabuena, eres el ganador " + juego.getJugadores().get(0).getNombre());
+                break;
             }
 
             //Eliminar jugadores sin dinero
@@ -46,6 +44,9 @@ public class Main {
                 System.out.println("Pulsa enter para continuar");
                 sc.nextLine();
             }
+
+            //Pintar estado
+            juego.pintarJuego();
         }
 
 

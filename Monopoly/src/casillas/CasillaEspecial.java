@@ -1,4 +1,4 @@
-package casillas;
+package Monopoly.src.casillas;
 
 public abstract class CasillaEspecial extends Casilla {
 

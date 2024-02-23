@@ -1,9 +1,7 @@
-package casillas;
-
-import juego.Jugador;
-import juego.Tablero;
+package Monopoly.src.casillas;
 
 import java.util.Scanner;
+import Monopoly.src.juego.Jugador;
 
 public class Propiedad extends Casilla{
 
@@ -63,15 +61,18 @@ public class Propiedad extends Casilla{
             this.propietario.setDinero(this.propietario.getDinero() + this.precioAlquiler);
             return "Te toca pagar al propietario";
         } else {
-            System.out.println("Deseas comprar esta propiedad (s/n):");
-            Scanner sc = new Scanner(System.in);
-            String respuesta = sc.nextLine();
-            if (respuesta.equals("s") || respuesta.equals("S")) {
-                this.propietario = jugador;
-                jugador.setDinero(jugador.getDinero() - this.precioCompra);
-                return "Enhorabuena has comprado " + this.getNombre();
-            } else if (respuesta.equals("n") || respuesta.equals("N")) {
-                return "Si no me compras sigue jugando ...";
+            if (this.precioCompra > jugador.getDinero()) {
+                return "No tienes dinero para comprar esta propiedad";
+            } else {
+                System.out.println("Deseas comprar esta propiedad (s/n):");
+                Scanner sc = new Scanner(System.in);
+                String respuesta = sc.nextLine();
+                if (respuesta.equals("s") || respuesta.equals("S")) {
+                    jugador.comprarPropiedad(this);
+                    return "Enhorabuena has comprado " + this.getNombre();
+                } else if (respuesta.equals("n") || respuesta.equals("N")) {
+                    return "Si no me compras sigue jugando ...";
+                }
             }
         }
         return "No entiendo la opción elegida, sigue jugando";

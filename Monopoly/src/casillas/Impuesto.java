@@ -1,7 +1,6 @@
-package casillas;
+package Monopoly.src.casillas;
 
-import juego.Jugador;
-import juego.Tablero;
+import Monopoly.src.juego.Jugador;
 
 public class Impuesto extends CasillaEspecial {
 

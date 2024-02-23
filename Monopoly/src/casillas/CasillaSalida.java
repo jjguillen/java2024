@@ -1,7 +1,7 @@
-package casillas;
+package Monopoly.src.casillas;
 
-import juego.Jugador;
-import juego.Tablero;
+
+import Monopoly.src.juego.Jugador;
 
 public class CasillaSalida extends Casilla{
 
@@ -12,6 +12,6 @@ public class CasillaSalida extends Casilla{
     @Override
     public String accion(Jugador jugador) {
         //Cobrar 40000 si no lo has cobrado
-        return "Estás en la salida, ahora te pago los 40000€";
+        return "Estás en la salida, ahora te pago los 20000€";
     }
 }

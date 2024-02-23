@@ -1,7 +1,6 @@
-package juego;
+package Monopoly.src.juego;
 
-import casillas.Casilla;
-import casillas.Propiedad;
+import Monopoly.src.casillas.*;
 
 import java.util.ArrayList;
 

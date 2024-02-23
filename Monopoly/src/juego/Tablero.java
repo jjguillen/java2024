@@ -1,15 +1,18 @@
-package juego;
+package Monopoly.src.juego;
 
-import casillas.*;
+import Monopoly.src.casillas.*;
 
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class Tablero {
 
     private ArrayList<Casilla> tablero;
+    private ArrayList<Carta> cartas;
 
     public Tablero() {
         this.tablero = new ArrayList<>();
+        this.cartas = new ArrayList<>();
         this.construirTablero();
     }
 
@@ -58,20 +61,42 @@ public class Tablero {
         }
 
         //Casilla de CARTA: 4, 7, 17, 22, 33
-        CasillaCarta cc1 = new CasillaCarta(4, "Banca");
-        CasillaCarta cc2 = new CasillaCarta(7, "Caja");
-        CasillaCarta cc3 = new CasillaCarta(17, "Banca");
-        CasillaCarta cc4 = new CasillaCarta(22, "Caja");
-        CasillaCarta cc5 = new CasillaCarta(33, "Banca");
+        CasillaCarta cc1 = new CasillaCarta(4, "Banca", this.getCartas());
+        CasillaCarta cc2 = new CasillaCarta(7, "Caja", this.getCartas());
+        CasillaCarta cc3 = new CasillaCarta(17, "Banca", this.getCartas());
+        CasillaCarta cc4 = new CasillaCarta(22, "Caja", this.getCartas());
+        CasillaCarta cc5 = new CasillaCarta(33, "Banca", this.getCartas());
         this.addCasilla(cc1);
         this.addCasilla(cc2);
         this.addCasilla(cc3);
         this.addCasilla(cc4);
         this.addCasilla(cc5);
+
+        //Mazo de cartas
+        int num=0;
+        for(int i=0; i<30; i++) {
+            num = generarNumero(1,2);
+            Carta carta;
+            if (num == 1) {
+                carta = new Carta("Carta para ti ", i*1000);
+            } else {
+                carta = new Carta("Carta para ti ", i*1000*-1);
+            }
+            this.cartas.add(carta);
+            Collections.shuffle(this.cartas);
+        }
     }
 
     public ArrayList<Casilla> getTablero() {
         return tablero;
+    }
+
+    public ArrayList<Carta> getCartas() {
+        return cartas;
+    }
+
+    private static int generarNumero(int min, int max)  {
+        return  (int) ((Math.random() * (max - min + 1) + min)) ;
     }
 
     @Override
