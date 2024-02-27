@@ -9,6 +9,7 @@ public class Patata extends Comida implements Cocinable {
 	
 	//Constructor
 	public Patata() {
+		super();
 		this.estado = CRUDA;
 		this.setNombre("Patata cruda");
 	}

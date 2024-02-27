@@ -4,8 +4,9 @@ public abstract class Ingrediente {
 
 	//Atributos
 	private String nombre;
-	private String tipoIngrediente;	 
-	
+	private String tipoIngrediente;
+
+
 	//Getters and Setters
 	public String getNombre() {
 		return nombre;

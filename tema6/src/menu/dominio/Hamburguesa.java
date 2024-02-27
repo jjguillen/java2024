@@ -11,6 +11,7 @@ public class Hamburguesa extends Comida {
 	
 	//Constructor
 	public Hamburguesa(String fecha) {
+		super();
 		this.setNombre("Hamburguesa");
 
 		//Pasar de String a Date

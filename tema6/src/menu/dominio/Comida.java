@@ -11,5 +11,5 @@ public abstract class Comida extends Ingrediente {
 		this.setTipoIngrediente("Comida");
 		this.cocinado = false;
 	}
-	
+
 }

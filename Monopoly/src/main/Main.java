@@ -1,5 +1,6 @@
 package Monopoly.src.main;
 
+import Monopoly.src.casillas.Propiedad;
 import Monopoly.src.juego.*;
 import java.util.Scanner;
 
@@ -26,6 +27,14 @@ public class Main {
                 break;
             }
 
+            //Eliminar propietario de las casillas con jugadores sin dinero
+            for(Jugador j: juego.getJugadores()) {
+                if (j.getDinero() <=0 ) {
+                    for(Propiedad p: j.getPropiedadesCompradas()) {
+                        p.setPropietario(null);
+                    }
+                }
+            }
             //Eliminar jugadores sin dinero
             juego.getJugadores().removeIf(j -> j.getDinero() <= 0);
 

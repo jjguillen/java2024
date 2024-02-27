@@ -27,10 +27,11 @@ public class Menu {
 	}
 
 	public void anyadirComida(Comida c) {
-		
+
 		listaIngredientes.add(c);
 		numeroIngredientes++;
 	}
+
 
 	public double obtenerPrecioMenu() {
 
