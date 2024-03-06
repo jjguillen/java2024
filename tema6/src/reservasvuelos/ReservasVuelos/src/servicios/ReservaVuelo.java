@@ -1,6 +1,6 @@
-package servicios;
+package tema6.src.reservasvuelos.ReservasVuelos.src.servicios;
 
-import entidades.*;
+import tema6.src.reservasvuelos.ReservasVuelos.src.entidades.*;
 import java.util.ArrayList;
 
 public class ReservaVuelo {
@@ -108,9 +108,9 @@ public class ReservaVuelo {
         for(Pasajero pasajero: pasajeros) {
             precio += pasajero.getAsiento().calcularPrecio();
             switch (tipoTarifa) {
-                case TipoTarifa.OPTIMA: precio += precio*0.1; break;
-                case TipoTarifa.CONFORT: precio += precio*0.15; break;
-                case TipoTarifa.FLEXIBLE: precio += precio*0.3; break;
+                case OPTIMA: precio += precio*0.1; break;
+                case CONFORT: precio += precio*0.15; break;
+                case FLEXIBLE: precio += precio*0.3; break;
             }
         }
 

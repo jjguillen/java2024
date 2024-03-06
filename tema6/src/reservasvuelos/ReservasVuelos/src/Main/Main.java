@@ -1,9 +1,7 @@
-import entidades.Pasajero;
-import entidades.TipoAsiento;
-import entidades.TipoTarifa;
-import entidades.Vuelo;
-import servicios.Atrapame;
-import servicios.ReservaVuelo;
+package tema6.src.reservasvuelos.ReservasVuelos.src.Main;
+
+import tema6.src.reservasvuelos.ReservasVuelos.src.entidades.*;
+import tema6.src.reservasvuelos.ReservasVuelos.src.servicios.*;
 
 import java.time.LocalDate;
 import java.time.LocalTime;

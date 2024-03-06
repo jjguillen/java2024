@@ -1,4 +1,4 @@
-package entidades;
+package tema6.src.reservasvuelos.ReservasVuelos.src.entidades;
 
 public class AsientoBusiness extends Asiento {
 

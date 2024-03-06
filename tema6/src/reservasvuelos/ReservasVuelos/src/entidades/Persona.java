@@ -1,8 +1,8 @@
-package entidades;
+package tema6.src.reservasvuelos.ReservasVuelos.src.entidades;
 
 import java.util.Objects;
 
-public abstract class Persona {
+public abstract class   Persona {
     protected Long id;
     protected String nombre;
     protected String apellidos;

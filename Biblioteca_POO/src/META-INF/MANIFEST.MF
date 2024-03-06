@@ -1,3 +1,3 @@
 Manifest-Version: 1.0
-Main-Class: aplicacion.App
+tema6.src.reservasvuelos.ReservasVuelos.src.Main.Main-Class: aplicacion.App
 

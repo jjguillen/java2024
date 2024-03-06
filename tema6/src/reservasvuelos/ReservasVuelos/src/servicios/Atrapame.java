@@ -1,6 +1,6 @@
-package servicios;
+package tema6.src.reservasvuelos.ReservasVuelos.src.servicios;
 
-import entidades.*;
+import tema6.src.reservasvuelos.ReservasVuelos.src.entidades.*;
 
 import java.time.LocalDate;
 import java.util.ArrayList;

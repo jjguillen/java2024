@@ -1,4 +1,4 @@
-package entidades;
+package tema6.src.reservasvuelos.ReservasVuelos.src.entidades;
 
 public class Pasajero extends Persona {
 
@@ -13,6 +13,10 @@ public class Pasajero extends Persona {
         this.restriccionesMedicas = restriccionesMedicas;
     }
 
+    /**
+     * Constructor copia
+     * @param pasajero
+     */
     public Pasajero(Pasajero pasajero) {
         this.id = pasajero.id;
         this.nombre = pasajero.nombre;

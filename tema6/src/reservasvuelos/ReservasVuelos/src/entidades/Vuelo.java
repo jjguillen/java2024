@@ -1,4 +1,4 @@
-package entidades;
+package tema6.src.reservasvuelos.ReservasVuelos.src.entidades;
 
 import java.time.LocalDate;
 import java.time.LocalTime;
@@ -182,6 +182,9 @@ public class Vuelo {
      */
     public void liberarAsiento(Asiento asiento) {
         if (asiento.getPasajero() != null) {
+            //Asiento -> pasajero
+            //Pasajero -> asiento
+
             asiento.getPasajero().setAsiento(null);
             asiento.setPasajero(null);
         }

@@ -1,9 +1,3 @@
-package entidades;
-
-import java.time.LocalDate;
-import java.time.LocalTime;
-import java.time.temporal.ChronoUnit;
-import java.util.ArrayList;
-import java.util.Objects;
+package tema6.src.reservasvuelos.ReservasVuelos.src.entidades;
 
 public enum TipoAsiento { TURISTA, BUSINESS; }
