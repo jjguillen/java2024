@@ -1,9 +1,11 @@
 package usodefechas;
 
+import java.sql.SQLOutput;
 import java.time.Duration;
 import java.time.LocalDate;
 import java.time.LocalTime;
 import java.time.Period;
+import java.time.temporal.ChronoUnit;
 
 public class IntervalosPeriodDuration {
 
@@ -16,6 +18,8 @@ public class IntervalosPeriodDuration {
         Duration duration = Duration.between(lt1, lt2);
         System.out.println(duration.getSeconds());
         System.out.println(duration.getSeconds() / 60);
+        System.out.println(Duration.between(lt1, lt2).getSeconds());
+        System.out.println(ChronoUnit.HOURS.between(lt1,lt2));
 
         //Tiempo transcurrido entre fechas LocalDate
         //Period hace el cálculo total de años, meses y días transcurridos
@@ -25,6 +29,8 @@ public class IntervalosPeriodDuration {
         Period periodo = Period.between(ld1, ld2);
         System.out.println(periodo.getDays());
         System.out.println(periodo.getMonths());
+
+        System.out.println(ChronoUnit.DAYS.between(ld1,ld2));
 
     }
 }

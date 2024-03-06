@@ -17,10 +17,12 @@ public class FormatoFechasHoras {
         //Tengo una fecha y la pinto en el formato personalizado
         LocalDateTime ldt = LocalDateTime.now();
         System.out.println(ldt.format(formatter));
+        System.out.println(ldt);
 
         //Tengo una fecha como string en un formato, y la paso a fecha real
         LocalDateTime ldt2 = LocalDateTime.parse("06/03/2024 20:00:00", formatter);
         System.out.println(ldt2);
+
 
 
         //Te sirve para fechas, horas y fechashoras

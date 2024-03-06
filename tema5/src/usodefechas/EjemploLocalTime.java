@@ -8,7 +8,7 @@ public class EjemploLocalTime {
 
         LocalTime lt1 = LocalTime.now();
         LocalTime lt2 = LocalTime.of(20, 17, 1);
-        LocalTime lt3 = LocalTime.parse("20:17:20");
+        LocalTime lt3 = LocalTime.parse("20:17:20"); //HH:mm:ss
 
         System.out.println(lt3);
         System.out.println(lt1.getHour());
