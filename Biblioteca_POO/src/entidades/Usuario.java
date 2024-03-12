@@ -4,8 +4,8 @@ package entidades;
 
 import java.util.ArrayList;
 
-import org.apache.commons.codec.digest.DigestUtils;
-import static org.apache.commons.codec.digest.MessageDigestAlgorithms.SHA_224;
+//import org.apache.commons.codec.digest.DigestUtils;
+//import static org.apache.commons.codec.digest.MessageDigestAlgorithms.SHA_224;
 
 public class Usuario {
 
@@ -23,8 +23,8 @@ public class Usuario {
         this.id = Usuario.contadorId++;
         this.dni = dni;
         this.nombre = nombre;
-        //this.password = password;
-        this.password = DigestUtils.sha512_256Hex(password);
+        this.password = password;
+        //this.password = DigestUtils.sha512_256Hex(password);
         this.limitePrestamos = limitePrestamos;
         this.limitePlazoPrestamos = limitePlazoPrestamos;
     }
