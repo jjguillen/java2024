@@ -69,6 +69,8 @@ public class TestHotel {
             System.out.println(h);
         }
 
+        hotelesOrdenados2.forEach(System.out::println);
+
 
 
 
