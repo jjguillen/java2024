@@ -101,4 +101,13 @@ public class NBA {
                 .findFirst()
                 .get();
     }
+
+    public Jugador buscarMasAlto7() {
+        return this.equipos.values().stream() //Stream<Equipo>
+                .flatMap( equipo -> equipo.getJugadores().stream()) //Stream<Jugador>
+                .max(Comparator.comparing(Jugador::getAltura))
+                .get();
+    }
+
+
 }
