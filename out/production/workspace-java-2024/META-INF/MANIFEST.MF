@@ -1,0 +1,3 @@
+Manifest-Version: 1.0
+tema6.src.reservasvuelos.ReservasVuelos.src.Main.Main-Class: Monopoly.src.main.Main
+
