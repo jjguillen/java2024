@@ -1,4 +1,4 @@
-package tema7_parte2.soldados;
+package tema7_parte2.flatmap;
 
 public class Soldado {
     private String nombre;
