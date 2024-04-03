@@ -8,11 +8,11 @@ public class Pelicula {
 
     private String id;
     private String titulo;
-    private int year;
+    private Integer year;
     private ArrayList<Genero> generos;
     private ArrayList<Director> directores;
 
-    public Pelicula(String titulo, int year) {
+    public Pelicula(String titulo, Integer year) {
         this.titulo = titulo;
         this.year = year;
         this.id = UUID.randomUUID().toString();
@@ -28,7 +28,7 @@ public class Pelicula {
         return titulo;
     }
 
-    public int getYear() {
+    public Integer getYear() {
         return year;
     }
 
