@@ -3,6 +3,8 @@ package tema7_parte2.EjercicioPeliculas;
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
+import java.util.Optional;
+import java.util.function.Predicate;
 import java.util.stream.Stream;
 
 public class Main {
@@ -71,15 +73,76 @@ public class Main {
                         .anyMatch( genero -> genero.getNombre().equals("Scifi")) )
                 .forEach(System.out::println);
 
+        System.out.println("-------------------------------------");
+
+        //tituloMasLargo(): muestra la película cuyo título es más largo
+        Pelicula tituloMasLargo = Stream.of(pel1,pel2,pel3,pel4,pel5,pel6,pel7,pel8,pel9,pel10)
+                .sorted( (p1,p2) -> Integer.valueOf(p2.getTitulo().length())
+                        .compareTo(Integer.valueOf(p1.getTitulo().length())) )
+                .sorted(Comparator.comparing( pel -> pel.getTitulo().length() ))
+                .findFirst()
+                .orElse(null); //COMO get pero le dices que devuelve si no hay nada
+        System.out.println(tituloMasLargo.getTitulo());
+
+        System.out.println("-------------------------------------");
+
+        //directoresMayúsculas(): muestra los nombres de los directores ordenados y en mayúsculas
+        Stream.of(pel1,pel2,pel3,pel4,pel5,pel6,pel7,pel8,pel9,pel10)
+                .flatMap( pel -> pel.getDirectores().stream() )
+                .map( Director::getNombre )
+                .distinct()
+                .map( String::toUpperCase )
+                .sorted()
+                .forEach(System.out::println);
+
+        System.out.println("-------------------------------------");
+
+        //numPelis(): muestra el director y al lado el número de películas de cada director.
+        //Al no tener la lista de directores, lo primero es sacar esa lista de directores
+        //luego contaremos sus pelis
+        Stream.of(pel1,pel2,pel3,pel4,pel5,pel6,pel7,pel8,pel9,pel10)
+                .flatMap( pel -> pel.getDirectores().stream() )
+                .distinct()
+                .forEach( director -> {
+                    Long numPelis = Stream.of(pel1,pel2,pel3,pel4,pel5,pel6,pel7,pel8,pel9,pel10)
+                            .filter( peli -> peli.getDirectores().stream()
+                                    .anyMatch( direc -> direc.getId() == director.getId()))
+                            .count();
+                    System.out.println(director.getNombre() + ": " + numPelis);
+                });
 
 
 
+        System.out.println("-------------------------------------");
 
+        //dramaYMafia(): muestra todas las películas de drama y mafia. Usa dos Predicate (sobre todos
+        //los géneros con anyMatch) y únelos con ‘and’.
+        // Predicate:  pelicula -> boolean
+        Predicate<Pelicula> drama = pelicula -> pelicula.getGeneros().stream()
+                .anyMatch( genero -> genero.getNombre().equals("Drama"));
+        Predicate<Pelicula> mafia = pelicula -> pelicula.getGeneros().stream()
+                .anyMatch( genero -> genero.getNombre().equals("Mafia"));
 
+        Stream.of(pel1,pel2,pel3,pel4,pel5,pel6,pel7,pel8,pel9,pel10)
+                .filter( drama.and(mafia) )
+                .forEach(System.out::println);
 
+        System.out.println("-------------------------------------");
 
+        //filmografías(): muestra las películas de cada director ordenadas por año. Que aparezca nombre
+        //de director y debajo sus películas ordenadas por año
 
-
+        Stream.of(pel1,pel2,pel3,pel4,pel5,pel6,pel7,pel8,pel9,pel10)
+                .flatMap( pel -> pel.getDirectores().stream() )
+                .distinct()
+                .forEach( director -> {
+                    System.out.println(director.getNombre() + " ----------------- ");
+                    Stream.of(pel1,pel2,pel3,pel4,pel5,pel6,pel7,pel8,pel9,pel10)
+                            .filter( peli -> peli.getDirectores().stream()
+                                    .anyMatch( direc -> direc.getId() == director.getId()))
+                            .map( Pelicula::getTitulo )
+                            .forEach(System.out::println);
+                });
 
 
 
