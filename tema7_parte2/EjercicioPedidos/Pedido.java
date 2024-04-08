@@ -4,7 +4,7 @@ import java.time.LocalDate;
 import java.util.HashSet;
 import java.util.Set;
 
-public class Pedido {
+public class Pedido implements  Comparable<Pedido>{
 
     enum EstadoProducto { RECIBIDO, PROCESADO, ENVIADO }
 
@@ -83,5 +83,10 @@ public class Pedido {
         sb.append(", productos=").append(productos);
         sb.append('}');
         return sb.toString();
+    }
+
+    @Override
+    public int compareTo(Pedido o) {
+        return this.getId().compareTo(o.getId());
     }
 }
