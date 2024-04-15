@@ -1,0 +1,5 @@
+Esto es un texto que se va a escribir en un fichero
+Linea 2
+Linea 3
+Qué divertido esto de los ficheros
+Adiós
