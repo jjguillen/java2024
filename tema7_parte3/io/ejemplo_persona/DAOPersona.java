@@ -20,6 +20,7 @@ public class DAOPersona {
         Path ficheroPersona = Paths.get("personas.csv");
         List<String> personasString = Files.readAllLines(ficheroPersona);
 
+        /*
         ArrayList<Persona> personas = new ArrayList<>();
         for(String personaStr : personasString) {
             String[] cad = personaStr.split(",");
@@ -28,8 +29,9 @@ public class DAOPersona {
             personas.add(person);
         }
         return personas;
+        */
 
-        /*
+        
         return personasString.stream()
                 .map( str -> {
                     String[] cad = str.split(",");
@@ -38,7 +40,8 @@ public class DAOPersona {
                     return person;
                 })
                 .toList();
-         */
+         
+        
     }
 
     /**
