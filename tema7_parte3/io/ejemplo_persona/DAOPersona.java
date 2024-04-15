@@ -39,9 +39,7 @@ public class DAOPersona {
                             cad[1], cad[2], cad[3], cad[4]);
                     return person;
                 })
-                .toList();
-         
-        
+                .toList();        
     }
 
     /**
