@@ -20,7 +20,7 @@ public class DAOPersona {
         Path ficheroPersona = Paths.get("personas.csv");
         List<String> personasString = Files.readAllLines(ficheroPersona);
 
-        /*
+
         ArrayList<Persona> personas = new ArrayList<>();
         for(String personaStr : personasString) {
             String[] cad = personaStr.split(",");
@@ -29,9 +29,9 @@ public class DAOPersona {
             personas.add(person);
         }
         return personas;
-        */
 
-        
+
+        /*
         return personasString.stream()
                 .map( str -> {
                     String[] cad = str.split(",");
@@ -39,7 +39,8 @@ public class DAOPersona {
                             cad[1], cad[2], cad[3], cad[4]);
                     return person;
                 })
-                .toList();        
+                .toList();
+         */
     }
 
     /**
@@ -64,7 +65,7 @@ public class DAOPersona {
         try {
             BufferedWriter bw = Files.newBufferedWriter(ficheroPersona,
                     StandardOpenOption.WRITE,
-                    StandardOpenOption.APPEND);
+                    StandardOpenOption.APPEND); //*
 
             //Escribimos en el archivo el string del objeto Persona
             bw.write(sb.toString());
