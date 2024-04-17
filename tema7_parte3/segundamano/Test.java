@@ -23,6 +23,7 @@ public class Test {
 
         Compra c1 = new Compra(1L, u2, u1, pm1, LocalDate.now(), 275.0);
 
+        System.out.println("La compra realizada es: ");
         System.out.println(c1);
 
     }
