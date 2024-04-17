@@ -9,15 +9,15 @@ import java.util.Objects;
  * @version 1.0
  * La clase que describe los Documentos de nuestra aplicación: libros y revistas
  */
-public abstract class Documento implements Prestable {
+public abstract class Documento implements entidades.Prestable {
 
     protected Long id;
     protected String isbn;
     protected String titulo;
-    protected Usuario prestadoA;
+    protected entidades.Usuario prestadoA;
     protected LocalDate fechaPrestamo;
     protected Integer numPaginas;
-    protected ArrayList<Autor> autores = new ArrayList<>();
+    protected ArrayList<entidades.Autor> autores = new ArrayList<>();
 
     public Documento(Long id, String isbn, String titulo, Integer numPaginas) {
         this.id = id;
