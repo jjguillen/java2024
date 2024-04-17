@@ -16,14 +16,15 @@ public class DAOPersona {
      * y devolver un List<Persona>
      * @return
      */
-    public static List<PersonaIO> leerArchivo() throws IOException {
+    public static List<Persona> leerArchivo() throws IOException {
         Path ficheroPersona = Paths.get("personas.csv");
         List<String> personasString = Files.readAllLines(ficheroPersona);
 
-        ArrayList<PersonaIO> personas = new ArrayList<>();
+
+        ArrayList<Persona> personas = new ArrayList<>();
         for(String personaStr : personasString) {
             String[] cad = personaStr.split(",");
-            PersonaIO person = new PersonaIO(Long.parseLong(cad[0]),
+            Persona person = new Persona(Long.parseLong(cad[0]),
                     cad[1], cad[2], cad[3], cad[4]);
             personas.add(person);
         }
@@ -46,7 +47,7 @@ public class DAOPersona {
      * El objeto Persona, lo convierte en una línea de texto y lo añade al final del archivo
      * @param persona
      */
-    public static void nuevaPersona(PersonaIO persona) {
+    public static void nuevaPersona(Persona persona) {
         //Pasar el objeto a cadena
         StringBuffer sb = new StringBuffer();
         sb.append(persona.getId());
