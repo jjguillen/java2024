@@ -39,15 +39,15 @@ public class PerfilUsuario {
         return ventas;
     }
 
-    private void addProducto2Mano(Producto2Mano producto) {
+    public void addProducto2Mano(Producto2Mano producto) {
         productoALaVenta.add(producto);
     }
 
-    private void addCompra(Compra compra) {
+    public void addCompra(Compra compra) {
         compras.add(compra);
     }
 
-    private void addVenta(Compra venta) {
+    public void addVenta(Compra venta) {
         ventas.add(venta);
     }
 

@@ -1,6 +1,7 @@
 package tema7_parte3.segundamano.models;
 
 import java.time.LocalDate;
+import java.util.UUID;
 
 public class Compra {
 
@@ -10,6 +11,16 @@ public class Compra {
     private Producto2Mano producto;
     private LocalDate fecha;
     private Double precioCompra;
+
+    public Compra(Usuario usuarioCompra, Usuario usuarioVende, Producto2Mano producto,
+                  LocalDate fecha, Double precioCompra) {
+        this.id = UUID.randomUUID().timestamp();
+        this.usuarioCompra = usuarioCompra;
+        this.usuarioVende = usuarioVende;
+        this.producto = producto;
+        this.fecha = fecha;
+        this.precioCompra = precioCompra;
+    }
 
     public Compra(Long id, Usuario usuarioCompra, Usuario usuarioVende, Producto2Mano producto,
                   LocalDate fecha, Double precioCompra) {

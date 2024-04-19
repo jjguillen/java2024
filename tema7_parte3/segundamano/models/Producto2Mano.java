@@ -14,6 +14,7 @@ public class Producto2Mano {
     private Estado estado;
     private boolean envio;
     private Double precio;
+    private boolean estaVendido;
 
     public Producto2Mano(Long id, String nombre, String descripcion, Categoria categoria, Estado estado,
                          boolean envio, Double precio) {
@@ -24,6 +25,7 @@ public class Producto2Mano {
         this.estado = estado;
         this.envio = envio;
         this.precio = precio;
+        this.estaVendido = false;
     }
 
     public Long getId() {
@@ -82,6 +84,14 @@ public class Producto2Mano {
         this.precio = precio;
     }
 
+    public boolean isEstaVendido() {
+        return estaVendido;
+    }
+
+    public void setEstaVendido(boolean estaVendido) {
+        this.estaVendido = estaVendido;
+    }
+
     @Override
     public String toString() {
         final StringBuffer sb = new StringBuffer("Producto2Mano{");
@@ -92,6 +102,7 @@ public class Producto2Mano {
         sb.append(", estado=").append(estado);
         sb.append(", envio=").append(envio);
         sb.append(", precio=").append(precio);
+        sb.append(", estaVendido=").append(estaVendido);
         sb.append('}');
         return sb.toString();
     }

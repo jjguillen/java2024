@@ -1,0 +1,50 @@
+1,Syrup - Pancake,mi nulla ac enim in tempor turpis,BICICLETAS,MALO,true,57347.63
+2,Kellogs Raisan Bran Bars,nonummy integer non velit donec,ANTIGUEDADES,DEFECTUOSO,true,88019.01
+3,Phyllo Dough,cursus id turpis integer aliquet massa id lobortis convallis,TELEFONÍA,MUY_USADO,true,23873.31
+4,Wine - Bouchard La Vignee Pinot,semper interdum mauris ullamcorper purus sit,BICICLETAS,BUENO,true,58524.07
+5,Toothpick Frilled,in faucibus orci luctus et ultrices posuere cubilia,ROPA,POCO_USO,false,85998.57
+6,Dates,in ante vestibulum ante ipsum primis in faucibus,BICICLETAS,DEFECTUOSO,false,46829.56
+7,Curry Paste - Madras,rutrum neque aenean auctor gravida sem praesent id massa,INFORMÁTICA,MUY_USADO,false,25384.45
+8,Sprouts - Corn,posuere felis sed lacus morbi,ANTIGUEDADES,DEFECTUOSO,false,28866.27
+9,Ice Cream Bar - Hageen Daz To,metus vitae ipsum aliquam non mauris morbi non lectus aliquam,BICICLETAS,PERFECTO,false,97563.06
+10,"Beef - Outside Round",in lectus pellentesque at nulla,TELEFONÍA,MALO,true,4721.6
+11,Anisette - Mcguiness,ultrices aliquet maecenas leo odio condimentum id,INMUEBLES,DEFECTUOSO,true,92863.92
+12,Chocolate - Liqueur Cups With Foil,pede lobortis ligula sit amet eleifend pede,TELEFONÍA,BUENO,true,39198.78
+13,Pasta - Angel Hair,magnis dis parturient montes nascetur ridiculus mus vivamus vestibulum,INMUEBLES,BUENO,true,35873.02
+14,Wine - Champagne Brut Veuve,ante ipsum primis in faucibus,COCHES,MUY_USADO,false,76943.18
+15,Grapefruit - Pink,sit amet consectetuer adipiscing elit proin interdum mauris,TELEFONÍA,DEFECTUOSO,true,21525.34
+16,Cocoa Powder - Natural,lorem ipsum dolor sit amet consectetuer,TELEFONÍA,BUENO,true,56084.28
+17,Mountain Dew,dui vel sem sed sagittis nam,ROPA,MALO,false,59449.74
+18,"Pasta - Gnocchi Potato",consectetuer adipiscing elit proin risus,MUEBLES,MUY_USADO,false,40867.63
+19,Vegetable - Base,lectus suspendisse potenti in eleifend quam a odio in,ROPA,PERFECTO,false,99288.94
+20,Pickles - Gherkins,justo sit amet sapien dignissim vestibulum,INMUEBLES,BUENO,false,20483.09
+21,Vinegar - Rice,justo sit amet sapien dignissim vestibulum vestibulum,TELEFONÍA,POCO_USO,false,30079.91
+22,Beef - Flank Steak,ut blandit non interdum in,INMUEBLES,DEFECTUOSO,true,97754.38
+23,"Wine - Red Wolf Blass Yellow",amet justo morbi ut odio cras mi pede,BICICLETAS,MUY_USADO,false,63066.84
+24,Pepper - Scotch Bonnet,nec condimentum neque sapien placerat,MUEBLES,POCO_USO,false,19523.66
+25,Peach - Fresh,nulla suspendisse potenti cras in purus eu magna,MUEBLES,BUENO,false,95505.11
+26,Bagel - Everything,accumsan tortor quis turpis sed ante,TELEFONÍA,BUENO,false,30064.89
+27,Fondant - Icing,pretium iaculis diam erat fermentum justo nec condimentum neque sapien,TELEFONÍA,BUENO,false,87291.75
+28,Carbonated Water - Orange,est lacinia nisi venenatis tristique fusce congue diam id ornare,TELEFONÍA,DEFECTUOSO,false,84117.71
+29,The Pop Shoppe - Root Beer,ligula sit amet eleifend pede libero quis orci nullam,COCHES,BUENO,false,42806.32
+30,Goldschalger,vel augue vestibulum ante ipsum primis in faucibus,COCHES,PERFECTO,true,79106.41
+31,Sage - Fresh,convallis nunc proin at turpis a,COCHES,DEFECTUOSO,true,47632.22
+32,Bread Base - Italian,vestibulum sed magna at nunc commodo placerat praesent blandit,INMUEBLES,MALO,true,84170.15
+33,Tomato Puree,ligula sit amet eleifend pede libero quis orci nullam molestie,INMUEBLES,MUY_USADO,true,33776.51
+34,Pastry - Chocolate Chip Muffin,nec condimentum neque sapien placerat ante nulla,INFORMÁTICA,BUENO,false,89501.11
+35,Appetizer - Mango Chevre,fusce consequat nulla nisl nunc nisl duis bibendum,ANTIGUEDADES,MUY_USADO,false,57509.27
+36,"Asparagus - White Fresh",eget tempus vel pede morbi porttitor,INMUEBLES,DEFECTUOSO,true,8905.09
+37,Wasabi Paste,rutrum rutrum neque aenean auctor gravida sem,ANTIGUEDADES,MALO,true,82702.2
+38,Appetizer - Tarragon Chicken,convallis morbi odio odio elementum,BICICLETAS,MUY_USADO,false,10336.97
+39,Squid - U 5,a libero nam dui proin leo odio porttitor id consequat,ANTIGUEDADES,MALO,false,33225.8
+40,Spinach - Baby,accumsan felis ut at dolor quis odio consequat varius integer,COCHES,BUENO,false,70391.63
+41,Tofu - Firm,mus etiam vel augue vestibulum rutrum rutrum neque aenean auctor,BICICLETAS,MUY_USADO,true,12950.16
+42,Flavouring - Orange,curabitur at ipsum ac tellus semper interdum mauris,COCHES,MUY_USADO,true,97865.57
+43,Wine - Cabernet Sauvignon,ipsum praesent blandit lacinia erat,TELEFONÍA,MALO,false,28984.15
+44,Mussels - Cultivated,sapien quis libero nullam sit,INMUEBLES,PERFECTO,false,94711.73
+45,Cheese - Pied De Vents,a pede posuere nonummy integer non velit,TELEFONÍA,DEFECTUOSO,true,24182.15
+46,Pastry - French Mini Assorted,etiam faucibus cursus urna ut tellus nulla ut erat id,MUEBLES,BUENO,true,53272.02
+47,Fruit Salad Deluxe,magna at nunc commodo placerat praesent blandit nam,ROPA,MALO,false,73822.59
+48,Trueblue - Blueberry Cranberry,fermentum donec ut mauris eget,MUEBLES,POCO_USO,false,46729.24
+49,"Beef - Tenderlion Center Cut",odio condimentum id luctus nec molestie,COCHES,PERFECTO,false,67917.52
+50,The Pop Shoppe - Grape,vulputate vitae nisl aenean lectus pellentesque,BICICLETAS,PERFECTO,true,53830.66
