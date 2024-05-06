@@ -1,6 +1,7 @@
 package tema7_parte1.ejercicios.hotel;
 
 import java.util.*;
+import tema7_parte1.ejercicios.hotel.*;
 
 public class TestHotel {
 
