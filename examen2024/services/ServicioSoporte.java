@@ -54,6 +54,7 @@ public class ServicioSoporte {
 
     public void deleteUsuario(Long id) {
         this.usuarios.removeIf(usuario -> usuario.getId() == id);
+        this.tickets.removeIf(ticket -> ticket.getUsuario().getId() == id);
     }
 
     public void addTecnico(Tecnico t) {
@@ -62,6 +63,7 @@ public class ServicioSoporte {
 
     public void deleteTecnico(Long id) {
         this.tecnicos.removeIf(tecnico -> tecnico.getId() == id);
+        this.tickets.removeIf(ticket -> ticket.getTecnico().getId() == id);
     }
 
     public void addTicketSoporte(Long id, LocalDate fechaCreacion, LocalDate fechaFinalizacion,
@@ -133,6 +135,7 @@ public class ServicioSoporte {
     public Long getTotalTicketsResueltos(Integer prioridad) {
         return this.tickets.stream()
                 .filter(ticket -> ticket.getEstado().equals(TicketSoporte.Estado.RESUELTO))
+                .filter(ticket -> ticket.getPrioridad() == prioridad)
                 .count();
     }
 
